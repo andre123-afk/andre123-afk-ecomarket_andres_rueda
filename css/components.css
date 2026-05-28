@@ -1,13 +1,3 @@
-/* HERO */
-
-.hero{
-    height:90vh;
-    background:url('../img/hero/banner.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
 .overlay{
     width:100%;
     height:100%;
@@ -89,8 +79,9 @@
 .productos{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    padding:50px;
+    gap:80px;
+    padding:70px;
+
 }
 
 .card{
@@ -100,7 +91,7 @@
     box-shadow:0 5px 20px rgba(0,0,0,0.1);
     transition:0.3s;
     text-align:center;
-    padding-bottom:20px;
+    padding:40px;
 }
 
 .card:hover{
@@ -118,10 +109,10 @@
 }
 .card a {
 
-    background-color: #2e7d32; /* El verde que estás usando */
+    background-color: #2e7d32;
     color: white;
-   padding: 20px 10px;
-   border-radius: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
 }
 
 .card p{

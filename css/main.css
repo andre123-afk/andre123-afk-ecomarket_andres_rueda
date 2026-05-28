@@ -2,10 +2,19 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image:url(../img/icons/f790531d-83e0-47c1-87de-f9be118a69f4.png);
+    background-image:url(../img/icons/fondo.jpeg);
     background-size: cover;
     background-position: center;
     margin: 0;
     min-height: 100vh;
     background-attachment: fixed;
+}
+.hero {
+    min-height: 100vh; 
+}
+.productos-seccion {
+    min-height: 100vh;     
+    padding: 60px 20px;  
+    background-color: #f5f2e8;
+    
 }
