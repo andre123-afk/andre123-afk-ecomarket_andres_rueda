@@ -35,6 +35,11 @@
     background:#1b5e20;
     transform:scale(1.05);
 }
+.formulario input:invalid,
+.formulario textarea:invalid {
+    border-color: #d32f2f !important;
+    background-color: #ffebee !important;
+}
 .contacto{
     min-height:100vh;
     display:flex;
@@ -159,4 +164,178 @@ body:has(:target) .grupo-productos {
 }
 body .grupo-productos:target {
     display: contents;
+}
+.contenido-sobre {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border-top: 5px solid #2e7d32;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.contenido-sobre h1 {
+    font-size: 2.5rem;
+    color: #1b5e20;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.contenido-sobre p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.contenido-sobre strong {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.valor {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border-top: 5px solid #2e7d32;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.valor:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+    max-width: calc(50% - 1rem);
+    width: 100%;
+}
+
+.valor:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(46, 125, 50, 0.12);
+}
+
+.valor h3 {
+    color: #1b5e20;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+.footer {
+    background-color: #1b5e20;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+.contacto-rapido {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 4rem 2rem;
+    border-top: 5px solid #2e7d32;
+    width: 100%;
+    margin: 4rem 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contacto-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;.formulario input:invalid,
+    .formulario textarea:invalid {
+        border-color: #d32f2f !important;
+        background-color: #ffebee !important;
+    }
+}
+
+.contacto-contenedor p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 2.5rem;
+}
+
+.contacto-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(46, 125, 50, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacto-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.18);
+    color: #2e7d32;
+}
+
+.contacto-item .icon {
+    font-size: 1.3rem;
+}
+
+.footer {
+    background-color: #1b5e20;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contacto-rapido {
+        padding: 3rem 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .contacto-contenedor h2 {
+        font-size: 1.8rem;
+    }
+
+    .contacto-opciones {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .contacto-item {
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
 }
