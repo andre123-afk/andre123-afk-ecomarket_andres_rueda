@@ -1,0 +1,13 @@
+.card{
+    animation: aparecer 3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
