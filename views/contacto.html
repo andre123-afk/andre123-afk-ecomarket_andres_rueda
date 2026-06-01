@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
     <nav class="navbar">
         <a class="logo" href="../index.html">EcoMarket</a>
         <div class="nav-links">
@@ -39,9 +42,12 @@
                 Escríbenos.
             </p>
             <form class="formulario">
+                <p>Nombre</p>
                 <input type="text" placeholder="Nombre" required>
+                <p>Correo</p>
                 <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Escribe tu mensaje" required></textarea>
+                <p>Mensaje</p>
+                <textarea placeholder="Escribe tu mensaje" required minlength="10"></textarea>
                 <button class="boton" type="submit">
                     Enviar mensaje
                 </button>

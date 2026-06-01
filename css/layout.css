@@ -20,7 +20,7 @@
     justify-content: flex-end;
 }
 .logo {
-    color: white;
+    color: rgb(216, 231, 208);
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -28,7 +28,7 @@
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(216, 238, 222);
     text-decoration: none;
 }
 
