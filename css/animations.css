@@ -46,3 +46,31 @@
     0%,80%{ opacity: 1; }
     100%{ opacity: 0; visibility: hidden; }
 }
+.blog-tarjeta__enlace {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-tarjeta__enlace::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #2e7d32;
+    transition: width 0.4s ease;
+}
+
+.blog-tarjeta__enlace:hover {
+    color: #1b5e20;
+}
+
+.blog-tarjeta__enlace:hover::after {
+    width: 100%;
+}
